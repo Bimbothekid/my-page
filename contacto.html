@@ -20,45 +20,48 @@
     <link rel="stylesheet" href="css/contacto.css">
 </head>
 <body>
-    <section class="contacto container">
+    <section class="contacto">
         <h2>Contacto</h2>
         <form action="#" method="post">
       
           
-          <label for="Nombre">Nombre:</label>
+          <label for="Nombre" >Nombre:</label>
           <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required />
       
           <label for="Apellido">Apellido:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu Apellido" required />
-         
+          <input type="text" id="apellido" name="apellido" placeholder="Escribe tu Apellido" required />
+
           <label for="email">Correo electrónico:</label>
           <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required />
       
-          
           <label for="telefono">Teléfono:</label>
-          <input type="tel" id="telefono" name="telefono" placeholder="123456789" />
+          <input type="tel" id="telefono" name="telefono" placeholder="11 2345-6789" />
       
-          
           <label for="comentario">Comentario:</label>
           <textarea id="comentario" name="comentario" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
       
+          <label for="motivo" >Motivo de contacto:</label>
           
-          <label for="motivo">Motivo de contacto:</label>
-          <select id="motivo" name="motivo">
+          <select id="motivo" name="motivo" class="motivo">
+            
             <option value="consulta">Consulta</option>
+            
             <option value="presupuesto">Presupuesto</option>
+            
             <option value="soporte">Soporte técnico</option>
+          
           </select>
       
           <!-- Botones -->
           <div class="form-botones">
             <button type="submit">Enviar</button>
-            <button type="reset">Resetear</button>
+            <button type="reset">Restablecer</button>
+
           </div>
-          <div class="volver-inicio" style="margin-top: 20px;">
-            <a href="index.html" class="btn-volver">Volver al Inicio</a>
         </form>
+        <div class="volver-inicio" style="margin-top: 20px;">
+          <a href="index.html" class="btn-volver">Volver al Inicio</a>
+        </div>
       </section>
-    
 </body>
 </html>

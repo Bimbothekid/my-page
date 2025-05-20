@@ -1,64 +1,107 @@
-.head{
-    background-color: #222;
+/* Fondo y fuente */
+body {
+  background-color: #121212;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
+
+/* Contenedor del formulario */
 .contacto {
-    padding: 40px 20px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    margin-top: 40px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Título */
+.contacto h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/* Etiquetas y campos */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: white;
+  font-size: 14px;
+}
+
+/* Botones */
+.form-botones {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  background-color: #333;
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darkred;
+}
+
+/* Botón de volver */
+.btn-volver {
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: darkred;
+}
+@media (max-width: 600px) {
+  .contacto {
+    margin: 20px;
+    padding: 20px;
   }
-  
+
   .contacto h2 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 24px;
   }
-  
-  .contacto form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contacto input,
-  .contacto textarea,
-  .contacto select {
+
+  button {
+    font-size: 14px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
   }
-  
-  .contacto label {
-    font-weight: 500;
-  }
-  
+
   .form-botones {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
+    flex-direction: column;
   }
-  
-  .form-botones button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #222;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .form-botones button:hover {
-    background-color: #444;
-  }
-  .btn-volver {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .btn-volver:hover {
-    background-color: darkred;
-  }
+}
